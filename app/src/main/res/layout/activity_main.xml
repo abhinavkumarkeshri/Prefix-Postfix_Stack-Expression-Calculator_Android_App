@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA500"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Stack Expression Calculator"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp" />
+
+    <!-- Infix Input -->
+    <EditText
+        android:id="@+id/inputInfix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Infix Expression"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Convert to Postfix or Prefix Options -->
+    <RadioGroup
+        android:id="@+id/convertOptionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/optionPostfix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Convert to Postfix"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/optionPrefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Convert to Prefix" />
+    </RadioGroup>
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF4500"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- Result Expression -->
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Result Expression: "
+        android:textSize="18sp"
+        android:textColor="#680878"
+        android:layout_marginTop="20dp"
+        android:padding="10dp" />
+
+    <!-- Steps List Header -->
+    <TextView
+        android:id="@+id/stepsHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Steps of Calculation :"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp" />
+
+    <!-- Steps List View -->
+    <ListView
+        android:id="@+id/stepsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:divider="#FF4500"
+        android:dividerHeight="2dp" />
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="© Made by Abhinav Kumar Keshri"
+        android:textSize="14sp"
+        android:textColor="#EE242222"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
