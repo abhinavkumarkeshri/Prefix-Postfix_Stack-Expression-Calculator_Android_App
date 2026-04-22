@@ -1,4 +1,3 @@
-# Prefix-Postfix_Stack-Expression-Calculator_Android_App
 # 📱 Stack Expression Calculator (Android)
 
 ## 🚀 Overview
@@ -28,9 +27,11 @@ It supports **Infix → Postfix/Prefix conversion** and step-by-step evaluation.
 
 ## 📸 App Preview
 
-![Screenshot 1](screenshots/App_Screenshot-1.jpeg)
-![Screenshot 2](screenshots/App_Screenshot-2.jpeg)
-![Screenshot 3](screenshots/App_Screenshot-3.jpeg)
+<p align="center">
+  <img src="screenshots/App_Screenshot-1.jpeg" width="250" />
+  <img src="screenshots/App_Screenshot-2.jpeg" width="250" />
+  <img src="screenshots/App_Screenshot-3.jpeg" width="250" />
+</p>
 
 ---
 
@@ -78,4 +79,5 @@ app/
 **Abhinav Kumar Keshri**
 
 ---
+
 
